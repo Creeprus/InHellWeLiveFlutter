@@ -17,7 +17,7 @@ class AuthInterceptor extends QueuedInterceptor {
 
   @override
   void onResponse(Response response, ResponseInterceptorHandler handler) {
-   // String dat=response.data['accessToken'].toString();
+    String dat=response.data['accessToken'].toString();
     super.onResponse(response, handler);
   }
 }

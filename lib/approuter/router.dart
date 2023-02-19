@@ -8,11 +8,20 @@ const  String log='log';
 const  String reg='reg';
 const  String adminpage='adminpage';
 const String userpage='userpage';
+const String mannote='mannote';
+const String updateprofile='updateprofile';
 class AppRouter{
  Route<dynamic>? generateRouter(RouteSettings settings){
 
   switch(settings.name)
   {
+    case updateprofile:{
+    return MaterialPageRoute(builder:(_)=> BlocProvider(
+      create: (context) => sl<AuthCubit>(),
+      child: UpdateProfile(),
+    ));
+}
+
 case log:{
     
     return MaterialPageRoute(builder:(_)=> BlocProvider(
@@ -26,15 +35,27 @@ case reg:{
       child: Registration(),
     ));
 }
+
 case userpage:{
     return MaterialPageRoute(builder:(_)=> BlocProvider(
       create: (context) => sl<AuthCubit>(),
       child: MainPage(),
     ));
+    
 }
-// case userpage:{
-//     return MaterialPageRoute(builder: (_)=>UserPage());
-// }
+case mannote:{
+    return MaterialPageRoute(builder:(_)=> BlocProvider(
+      create: (context) => sl<AuthCubit>(),
+      child: NoteRedaction(),
+    ));
+    
+}
+case updateprofile:{
+    return MaterialPageRoute(builder:(_)=> BlocProvider(
+      create: (context) => sl<AuthCubit>(),
+      child: UpdateProfile(),
+    ));
+}
   }
  }
 }

@@ -4,8 +4,8 @@ part 'notes.g.dart';
 @freezed
 class Notes with _$Notes {
   const factory Notes({
-    String? notename,
-    String? notecategory,
+    String? noteName,
+    String? noteCategory,
     required int? id,
     String? noteDateCreated,
     String? noteDateChanged,

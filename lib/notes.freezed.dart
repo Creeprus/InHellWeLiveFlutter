@@ -20,8 +20,8 @@ Notes _$NotesFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Notes {
-  String? get notename => throw _privateConstructorUsedError;
-  String? get notecategory => throw _privateConstructorUsedError;
+  String? get noteName => throw _privateConstructorUsedError;
+  String? get noteCategory => throw _privateConstructorUsedError;
   int? get id => throw _privateConstructorUsedError;
   String? get noteDateCreated => throw _privateConstructorUsedError;
   String? get noteDateChanged => throw _privateConstructorUsedError;
@@ -38,8 +38,8 @@ abstract class $NotesCopyWith<$Res> {
       _$NotesCopyWithImpl<$Res, Notes>;
   @useResult
   $Res call(
-      {String? notename,
-      String? notecategory,
+      {String? noteName,
+      String? noteCategory,
       int? id,
       String? noteDateCreated,
       String? noteDateChanged,
@@ -59,21 +59,21 @@ class _$NotesCopyWithImpl<$Res, $Val extends Notes>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? notename = freezed,
-    Object? notecategory = freezed,
+    Object? noteName = freezed,
+    Object? noteCategory = freezed,
     Object? id = freezed,
     Object? noteDateCreated = freezed,
     Object? noteDateChanged = freezed,
     Object? active = freezed,
   }) {
     return _then(_value.copyWith(
-      notename: freezed == notename
-          ? _value.notename
-          : notename // ignore: cast_nullable_to_non_nullable
+      noteName: freezed == noteName
+          ? _value.noteName
+          : noteName // ignore: cast_nullable_to_non_nullable
               as String?,
-      notecategory: freezed == notecategory
-          ? _value.notecategory
-          : notecategory // ignore: cast_nullable_to_non_nullable
+      noteCategory: freezed == noteCategory
+          ? _value.noteCategory
+          : noteCategory // ignore: cast_nullable_to_non_nullable
               as String?,
       id: freezed == id
           ? _value.id
@@ -102,8 +102,8 @@ abstract class _$$_NotesCopyWith<$Res> implements $NotesCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {String? notename,
-      String? notecategory,
+      {String? noteName,
+      String? noteCategory,
       int? id,
       String? noteDateCreated,
       String? noteDateChanged,
@@ -119,21 +119,21 @@ class __$$_NotesCopyWithImpl<$Res> extends _$NotesCopyWithImpl<$Res, _$_Notes>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? notename = freezed,
-    Object? notecategory = freezed,
+    Object? noteName = freezed,
+    Object? noteCategory = freezed,
     Object? id = freezed,
     Object? noteDateCreated = freezed,
     Object? noteDateChanged = freezed,
     Object? active = freezed,
   }) {
     return _then(_$_Notes(
-      notename: freezed == notename
-          ? _value.notename
-          : notename // ignore: cast_nullable_to_non_nullable
+      noteName: freezed == noteName
+          ? _value.noteName
+          : noteName // ignore: cast_nullable_to_non_nullable
               as String?,
-      notecategory: freezed == notecategory
-          ? _value.notecategory
-          : notecategory // ignore: cast_nullable_to_non_nullable
+      noteCategory: freezed == noteCategory
+          ? _value.noteCategory
+          : noteCategory // ignore: cast_nullable_to_non_nullable
               as String?,
       id: freezed == id
           ? _value.id
@@ -159,8 +159,8 @@ class __$$_NotesCopyWithImpl<$Res> extends _$NotesCopyWithImpl<$Res, _$_Notes>
 @JsonSerializable()
 class _$_Notes implements _Notes {
   const _$_Notes(
-      {this.notename,
-      this.notecategory,
+      {this.noteName,
+      this.noteCategory,
       required this.id,
       this.noteDateCreated,
       this.noteDateChanged,
@@ -170,9 +170,9 @@ class _$_Notes implements _Notes {
       _$$_NotesFromJson(json);
 
   @override
-  final String? notename;
+  final String? noteName;
   @override
-  final String? notecategory;
+  final String? noteCategory;
   @override
   final int? id;
   @override
@@ -184,7 +184,7 @@ class _$_Notes implements _Notes {
 
   @override
   String toString() {
-    return 'Notes(notename: $notename, notecategory: $notecategory, id: $id, noteDateCreated: $noteDateCreated, noteDateChanged: $noteDateChanged, active: $active)';
+    return 'Notes(noteName: $noteName, noteCategory: $noteCategory, id: $id, noteDateCreated: $noteDateCreated, noteDateChanged: $noteDateChanged, active: $active)';
   }
 
   @override
@@ -192,10 +192,10 @@ class _$_Notes implements _Notes {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Notes &&
-            (identical(other.notename, notename) ||
-                other.notename == notename) &&
-            (identical(other.notecategory, notecategory) ||
-                other.notecategory == notecategory) &&
+            (identical(other.noteName, noteName) ||
+                other.noteName == noteName) &&
+            (identical(other.noteCategory, noteCategory) ||
+                other.noteCategory == noteCategory) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.noteDateCreated, noteDateCreated) ||
                 other.noteDateCreated == noteDateCreated) &&
@@ -206,7 +206,7 @@ class _$_Notes implements _Notes {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, notename, notecategory, id,
+  int get hashCode => Object.hash(runtimeType, noteName, noteCategory, id,
       noteDateCreated, noteDateChanged, active);
 
   @JsonKey(ignore: true)
@@ -225,8 +225,8 @@ class _$_Notes implements _Notes {
 
 abstract class _Notes implements Notes {
   const factory _Notes(
-      {final String? notename,
-      final String? notecategory,
+      {final String? noteName,
+      final String? noteCategory,
       required final int? id,
       final String? noteDateCreated,
       final String? noteDateChanged,
@@ -235,9 +235,9 @@ abstract class _Notes implements Notes {
   factory _Notes.fromJson(Map<String, dynamic> json) = _$_Notes.fromJson;
 
   @override
-  String? get notename;
+  String? get noteName;
   @override
-  String? get notecategory;
+  String? get noteCategory;
   @override
   int? get id;
   @override

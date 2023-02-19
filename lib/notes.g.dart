@@ -7,8 +7,8 @@ part of 'notes.dart';
 // **************************************************************************
 
 _$_Notes _$$_NotesFromJson(Map<String, dynamic> json) => _$_Notes(
-      notename: json['notename'] as String?,
-      notecategory: json['notecategory'] as String?,
+      noteName: json['noteName'] as String?,
+      noteCategory: json['noteCategory'] as String?,
       id: json['id'] as int?,
       noteDateCreated: json['noteDateCreated'] as String?,
       noteDateChanged: json['noteDateChanged'] as String?,
@@ -16,8 +16,8 @@ _$_Notes _$$_NotesFromJson(Map<String, dynamic> json) => _$_Notes(
     );
 
 Map<String, dynamic> _$$_NotesToJson(_$_Notes instance) => <String, dynamic>{
-      'notename': instance.notename,
-      'notecategory': instance.notecategory,
+      'noteName': instance.noteName,
+      'noteCategory': instance.noteCategory,
       'id': instance.id,
       'noteDateCreated': instance.noteDateCreated,
       'noteDateChanged': instance.noteDateChanged,
